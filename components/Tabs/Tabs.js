@@ -8,7 +8,7 @@ class TabLink {
   if(this.tabData === 'all'){
       this.cards = document.querySelectorAll('.card');
     } else {
-      this.card = document.querySelectorAll(`card[data-tab='${this.tabData}']`);
+      this.cards = document.querySelectorAll(`.card[data-tab='${this.tabData}']`);
     }
 
     this.cards = Array.from(this.cards).map(function(card){
